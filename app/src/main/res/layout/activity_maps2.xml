@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MapsActivity2">
+
+
+    <fragment
+        android:id="@+id/mapa"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </fragment>
+
+    <SearchView
+        android:id="@+id/buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_cuadro"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar..."
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_map2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#3DDC84"
+        android:clickable="true"
+        android:scaleType="center"
+        app:fabSize="normal"
+        app:srcCompat="@mipmap/flecha1" />
+
+
+
+
+</RelativeLayout>

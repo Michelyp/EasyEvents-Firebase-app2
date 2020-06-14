@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EventoCreando">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Datos del evento"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="#EE710A"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/Preview"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_gravity="center"
+
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:text="Foto del evento"
+                android:textColor="#070707"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/verFoto"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_alignTop="@+id/imagenEvento"
+                android:background="@android:drawable/ic_menu_view" />
+
+
+
+
+            <EditText
+                android:id="@+id/imagenEvento"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:hint="Enlace de la imagen "
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:singleLine = "true"
+                android:maxLength="400"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp" />
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Título"
+                android:textColor="#070707"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/eventoName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:singleLine = "true"
+                android:maxLength="60"
+                android:paddingBottom="15dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:text="Descripción del evento"
+                android:textColor="#070707"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/eventoMessage"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:maxLength="60"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Nombre del anfitrión:"
+                android:textColor="#070707"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/personName"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:singleLine = "true"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:text="Fecha del evento:"
+                android:layout_gravity="center"
+                android:textColor="#070707"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/botonFecha"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:text="Mostrar calendario"
+                android:layout_gravity="center"
+                android:textColor="#fffdf9"
+                android:background="@drawable/boton_redondo"/>
+
+            <EditText
+                android:id="@+id/mostarfecha"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingBottom="15dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:text="Hora del evento:"
+                android:textColor="#070707"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/botonHora"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:text="Mostrar Hora"
+                android:textColor="#fffdf9"
+                android:background="@drawable/boton_redondo"/>
+
+            <EditText
+                android:id="@+id/horaEvent"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Lugar del evento:"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textColor="#070707"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/mostarLugar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:singleLine = "true"
+                android:paddingBottom="15dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/irMapa"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Mostrar mapa"
+                android:layout_marginLeft="28dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fffdf9"
+                android:background="@drawable/boton_redondo"
+                >
+
+            </Button>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="ID del evento:"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#070707"
+                android:layout_gravity="center"
+
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/mostarId"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:paddingLeft="10dp"
+                android:singleLine = "true"
+                android:paddingBottom="15dp"
+                android:layout_marginRight="28dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:text="Los datos de tu evento se guardaran y se mostrarán con el ID del evento, el cuál podras compartir con los invitados. "
+                android:textColor="#070707"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/eventEdit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#fffdf9"
+                android:text="Editar"
+                android:visibility="gone"
+                android:background="@drawable/boton_redondo"
+                >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/eventCreado"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:textColor="#fffdf9"
+                android:text="Crear Evento"
+                android:background="@drawable/boton_redondo"
+                >
+
+            </Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

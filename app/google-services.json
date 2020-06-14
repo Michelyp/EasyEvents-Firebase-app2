@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "982438551897",
+    "firebase_url": "https://easyevents2-firebase.firebaseio.com",
+    "project_id": "easyevents2-firebase",
+    "storage_bucket": "easyevents2-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982438551897:android:f6069e9fbdf842beb36c48",
+        "android_client_info": {
+          "package_name": "com.example.easyeventsfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982438551897-ml9frpnq07mtlff5epmuftrjgeg92vsq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.easyeventsfirebase",
+            "certificate_hash": "d8f6d81daa0aaaf22a64efbe2b13dd0a1a27a4c6"
+          }
+        },
+        {
+          "client_id": "982438551897-0ke7gjuf562gpad3ure066irs6stj0a9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQzE9Acn_DNiEg7OcZmYvIliE24xjkJSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982438551897-0ke7gjuf562gpad3ure066irs6stj0a9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
